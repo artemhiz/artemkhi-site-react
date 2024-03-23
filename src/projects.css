@@ -1,0 +1,100 @@
+#projects-heading {
+    color: var(--color-three);
+    text-transform: none;
+}
+.filters {
+    display: flex;
+    gap: 5px;
+}
+.filters button {
+    background-color: transparent;
+    border: 1px solid var(--color-two);
+    color: var(--color-two);
+    font-size: 15px;
+    padding: 10px 15px;
+    border-radius: 35px;
+}
+.filters button:hover:not(#x, #edu, .active) {
+    background-color: var(--color-two);
+    color: black;
+}
+.filters button.active:not(#edu) {
+    background-color: var(--color-two);
+    color: black;
+    font-weight: bold;
+}
+.filters button img {
+    height: 15px;
+}
+.filters #edu {
+    border-color: var(--color-three);
+    color: var(--color-three);
+    font-style: italic;
+    margin-left: 10px;
+}
+.filters #edu:hover:not(.active) {
+    background-color: var(--color-three);
+    color: white;
+}
+.filters #edu.active {
+    background-color: var(--color-three);
+    color: white;
+    font-weight: bold;
+}
+.card-list {
+    flex: 1;
+    widtH: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    margin: 20px;
+    gap: 20px;
+}
+.card {
+    text-align: center;
+    border: 1px solid transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    padding: 20px;
+}
+.card .educational-purposes {
+    color: white;
+    border: 1px solid var(--color-three);
+    padding: 10px 15px;
+    border-radius: 15px;
+    width: 100px;
+}
+.clickable {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+.clickable img {
+    border-radius: 15px;
+    width: 90%;
+}
+.clickable button {
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px 15px;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    width: 80%;
+}
+
+@media all and (max-width: 400px) {
+    .filters  {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px 5px;
+    }
+    .card h2 {
+        font-size: 30px;
+    }
+}

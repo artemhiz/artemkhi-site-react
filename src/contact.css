@@ -1,0 +1,110 @@
+.contacts.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(17px);
+    -webkit-backdrop-filter: blur(17px);
+    z-index: 400;
+    filter: none;
+    opacity: 1;
+    transition-duration: 0.625s;
+}
+.contacts.closed {
+    position: fixed;
+    width: 0px;
+    height: 0px;
+    top: 50vh;
+    left: 50vw;
+    filter: blur(40px);
+    opacity: 0;
+    border-radius: 50%;
+    transition-duration: 0.625s;
+}
+.contacts .window {
+    width: 80vw;
+    height: 70vh;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    box-shadow: 10px 10px 0px var(--color-two);
+}
+.contacts.closed .window {
+    display: none;
+}
+.contacts .window .heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contacts .window .heading h2 {
+    margin: 0;
+    margin-left: 15px;
+    color: var(--color-two);
+}
+.contacts .window .x {
+    height: 50%;
+    margin-right: 20px;
+}
+.contacts .flex-list {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: 20px;
+    margin-top: 0;
+    overflow-y: auto;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding-top: 15px;
+}
+.contacts .flex-list .flex-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 17%;
+    cursor: pointer;
+}
+.contacts .flex-list .flex-item img {
+    width: 100%;
+}
+@media all and (max-width: 400px) {
+    .contacts .heading h2 {
+        font-size: 30px;
+    }
+    .contacts .flex-list {
+        margin: 5px;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+        flex-wrap: nowrap;
+        gap: 20px;
+    }
+    .contacts .flex-list .flex-item {
+        margin: 0 auto;
+        width: 40%;
+        padding: 10px 0;
+        white-space: nowrap;
+    }
+    .contacts .x:not(.mobile) {
+        display: none;
+    }
+    .contacts .x.mobile {
+        margin: auto;
+        width: 30px;
+        height: 30px;
+    }
+}

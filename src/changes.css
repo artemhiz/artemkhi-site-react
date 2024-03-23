@@ -1,0 +1,32 @@
+.changes .block h1 {
+    color: var(--color-three);
+}
+.changes .block {
+    padding: 20px;
+    text-align: justify;
+}
+.changes .block p#main {
+    width: 60%;
+}
+.changes h2 {
+    color: var(--color-two);
+}
+.changes .block p {
+    margin: auto 30px;
+}
+@media all and (max-width: 600px) {
+    .changes .block h1 {
+        font-size: 40px;
+    }
+    .changes .block {
+        text-align: left;
+    }
+    .changes .block p, .changes .block p#main {
+        font-size: 15px;
+        width: auto;
+        margin: 0;
+    }
+    .changes .block h2 {
+        font-size: 18px;
+    }
+}

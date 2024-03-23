@@ -1,0 +1,36 @@
+h1 {
+    font-size: 60px;
+    text-transform: uppercase;
+    color: #C60000;
+    margin: 0;
+}
+.about .block {
+    padding: 20px;
+    text-align: justify;
+}
+#horizontal {
+    display: flex;
+    flex-direction: row;
+    padding: 40px;
+}
+#horizontal * {
+    flex: 1;
+}
+.photos {
+    display: flex;
+    gap: 40px;
+    margin: 0 20px;
+}
+.photos img {
+    width: 40%;
+    border-radius: 10px;
+}
+
+@media all and (max-width: 400px) {
+    .about .block {
+        text-align: left;
+    }
+    .about .photos {
+        display: none;
+    }
+}
