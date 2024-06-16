@@ -1,5 +1,7 @@
 import istex from './media/screenshots/istex.png';
 import nb from './media/screenshots/nbsite.png';
+import ufeed from './media/screenshots/ufeed.png';
+import istexlab from './media/screenshots/istexlab.png';
 import cookit from './media/screenshots/cookit.png';
 import weather from './media/screenshots/weather.png';
 import christmas from './media/screenshots/christmas.png';
@@ -7,6 +9,38 @@ import todos from './media/screenshots/todolist.png';
 import furniture from './media/screenshots/furniture.png';
 
 export const projects = [
+    {
+        id: 'ufeed',
+        title: {
+            english: 'UFeed – posts from all over the world',
+            russian: 'UFeed – посты со всего мира'
+        },
+        description: {
+            english: "Authorize and write posts to be visible for everyone, or read others' posts",
+            russian: "Авторизуйся и пиши посты, чтобы быть у всех на виду, или же читай посты других"
+        },
+        tools: ['HTML/CSS', 'JavaScript', 'React', 'Node.js', 'Database', 'Authorization'],
+        link: 'https://magnificent-meerkat-36d224.netlify.app',
+        color: '#4a7ba9',
+        image: ufeed,
+        forStudy: true
+    },
+    {
+        id: 'istexlab',
+        title: {
+            english: 'Cart prototype',
+            russian: 'Прототип корзины'
+        },
+        description: {
+            english: 'Add and remove items from cart enjoying beautiful animations. (Based on İstEx)',
+            russian: 'Добавляйте и удаляйте товары из корзины, наслаждясь красивыми анимациями. (На базе İstEx)'
+        },
+        tools: ['HTML/CSS', 'JavaScript', 'React', 'Redux'],
+        link: 'https://istexlab.netlify.app',
+        color: '#EB954E',
+        image: istexlab,
+        forStudy: true
+    },
     {
         id: 'istex',
         title: {
@@ -21,22 +55,6 @@ export const projects = [
         link: 'http://experience.istanbul/',
         color: '#B8621B',
         image: istex,
-        forStudy: false
-    },
-    {
-        id: 'boju',
-        title: {
-            english: 'Natalia Borisova the lawyer',
-            russian: 'Юрист Наталья Борисовна'
-        },
-        description: {
-            english: 'Site project for Natalia Borisova (@borisova_jurist). It shows the information about services to make and some other legal information.',
-            russian: 'Сайт-проект для Натальи Борисовой (@borisova_jurist). Отображает инфомацию об оказываемых услугах и дополнительную юридическую информацию.'
-        },
-        tools: ['HTML/CSS'],
-        link: 'http://borisova-jurist.ru/',
-        color: '#5584AC',
-        image: nb,
         forStudy: false
     },
     {
@@ -102,6 +120,22 @@ export const projects = [
         color: '#d2691e',
         image: todos,
         forStudy: true
+    },
+    {
+        id: 'boju',
+        title: {
+            english: 'Natalia Borisova the lawyer',
+            russian: 'Юрист Наталья Борисовна'
+        },
+        description: {
+            english: 'Site project for Natalia Borisova (@borisova_jurist). It shows the information about services to make and some other legal information.',
+            russian: 'Сайт-проект для Натальи Борисовой (@borisova_jurist). Отображает инфомацию об оказываемых услугах и дополнительную юридическую информацию.'
+        },
+        tools: ['HTML/CSS'],
+        link: 'http://borisova-jurist.ru/',
+        color: '#5584AC',
+        image: nb,
+        forStudy: false
     },
     {
         id: 'furniture',

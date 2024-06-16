@@ -11,7 +11,6 @@ export function Projects({lang}) {
         <div className="line">
             <div className="block">
                 <h1 id="projects-heading">{lang === 'Eng' ? 'My sites' : 'Мои сайты'}</h1>
-                {lang === 'Eng' && <p>in Russian only</p>}
                 <p className="mobile">{lang === 'Eng' ? 'Filters:' : 'Фильтры:'}</p>
                 <div className="filters">
                     <button id="x" onClick={() => {selectFilter(''); setEdu(false)}} title={lang === 'Eng' ? 'Cancel filtering' : 'Сбросить фильтры'}><img src={x} alt={lang === 'Eng' ? 'Cancel filtering' : 'Сбросить фильтры'}/></button>
@@ -19,6 +18,10 @@ export function Projects({lang}) {
                     <button className={selectedFilter === 'JavaScript' ? 'active' : ''} onClick={() => selectFilter(selectedFilter === 'JavaScript' ? '' : 'JavaScript')}>JavaScript</button>
                     <button className={selectedFilter === 'React' ? 'active' : ''} onClick={() => selectFilter(selectedFilter === 'React' ? '' : 'React')}>React</button>
                     <button className={selectedFilter === 'API' ? 'active' : ''} onClick={() => selectFilter(selectedFilter === 'API' ? '' : 'API')}>API</button>
+                    <button className={selectedFilter === 'Redux' ? 'active' : ''} onClick={() => selectFilter(selectedFilter === 'Redux' ? '' : 'Redux')}>Redux</button>
+                    <button className={selectedFilter === 'Node.js' ? 'active' : ''} onClick={() => selectFilter(selectedFilter === 'Node.js' ? '' : 'Node.js')}>Node.js</button>
+                    <button className={selectedFilter === 'Database' ? 'active' : ''} onClick={() => selectFilter(selectedFilter === 'Database' ? '' : 'Database')}>{lang === 'Eng' ? 'Database' : 'База данных'}</button>
+                    <button className={selectedFilter === 'Authorization' ? 'active' : ''} onClick={() => selectFilter(selectedFilter === 'Authorization' ? '' : 'Authorization')}>{lang === 'Eng' ? 'Authorization' : 'Авторизация'}</button>
                     <button id='edu' onClick={() => setEdu(!showEdu)} className={showEdu ? 'active' : ''} title={lang === 'Eng' ? 'If you want to see the apps which I did while was studying, select it' : 'Если вы хотите увидеть программы, составленные мной во время обучения, выберите этот пункт'}>{lang === 'Eng' ? 'Educational apps' : 'Учебные приложения'}</button>
                 </div>
                 <div className="card-list">
