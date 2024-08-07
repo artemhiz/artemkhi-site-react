@@ -9,6 +9,22 @@ import todos from './media/screenshots/todolist.png';
 import furniture from './media/screenshots/furniture.png';
 
 export const projects = [
+    // {
+    //     id: 'nb-2-0',
+    //     title: {
+    //         english: 'Natalia Borisova\'s site update',
+    //         russian: 'Обновление сайта Натальи Борисовой'
+    //     },
+    //     description: {
+    //         english: "Authorize and write posts to be visible for everyone, or read others' posts",
+    //         russian: "Обновление сайта Натальи Борисовой. Теперь на сайте есть лента новостей, "
+    //     },
+    //     tools: ['HTML/CSS', 'JavaScript', 'React', 'Node.js', 'Database', 'Authorization'],
+    //     link: 'https://magnificent-meerkat-36d224.netlify.app',
+    //     color: '#4a7ba9',
+    //     image: ufeed,
+    //     forStudy: true
+    // },
     {
         id: 'ufeed',
         title: {
